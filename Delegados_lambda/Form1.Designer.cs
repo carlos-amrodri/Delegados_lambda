@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.delegadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.primerEjemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.segundoEjemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // delegadosToolStripMenuItem
             // 
             this.delegadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.primerEjemploToolStripMenuItem});
+            this.primerEjemploToolStripMenuItem,
+            this.segundoEjemploToolStripMenuItem});
             this.delegadosToolStripMenuItem.Name = "delegadosToolStripMenuItem";
             this.delegadosToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.delegadosToolStripMenuItem.Text = "Delegados";
@@ -55,9 +57,16 @@
             // primerEjemploToolStripMenuItem
             // 
             this.primerEjemploToolStripMenuItem.Name = "primerEjemploToolStripMenuItem";
-            this.primerEjemploToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.primerEjemploToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.primerEjemploToolStripMenuItem.Text = "Primer ejemplo";
             this.primerEjemploToolStripMenuItem.Click += new System.EventHandler(this.primerEjemploToolStripMenuItem_Click);
+            // 
+            // segundoEjemploToolStripMenuItem
+            // 
+            this.segundoEjemploToolStripMenuItem.Name = "segundoEjemploToolStripMenuItem";
+            this.segundoEjemploToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.segundoEjemploToolStripMenuItem.Text = "Segundo ejemplo";
+            this.segundoEjemploToolStripMenuItem.Click += new System.EventHandler(this.segundoEjemploToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -81,6 +90,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem delegadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem primerEjemploToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem segundoEjemploToolStripMenuItem;
     }
 }
 

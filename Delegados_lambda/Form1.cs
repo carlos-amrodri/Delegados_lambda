@@ -23,5 +23,12 @@ namespace Delegados_lambda
             del.MdiParent = this;
             del.Show();
         }
+
+        private void segundoEjemploToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lambda lam = new Lambda();
+            lam.MdiParent = this;
+            lam.Show();
+        }
     }
 }
