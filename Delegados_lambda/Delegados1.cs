@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Delegados_lambda
 {
-    public partial class Form1 : Form
+    public partial class Delegados1 : Form
     {
-        public Form1()
+        public Delegados1()
         {
             InitializeComponent();
         }
 
-        private void primerEjemploToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Delegados1 del = new Delegados1();
-            del.MdiParent = this;
-            del.Show();
+
         }
     }
 }
