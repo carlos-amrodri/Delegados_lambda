@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace Delegados_lambda
 {
-    class Calculador
+    public class Calculador
     {
+        private double _numero;
+
+        public Calculador(double numero)
+        {
+            _numero = numero;
+        }
+
+        public double multiplicar (double num)
+        {
+            return num * _numero;
+        }
+
+        public double sumar ( double num)
+        {
+            return num + _numero;
+        }
     }
 }
