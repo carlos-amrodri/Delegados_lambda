@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace Delegados_lambda
 {
+    //Declaro mi delegado con su firma
     delegate double clacularDobles(double numero);
 
     public partial class Delegados1 : Form
@@ -27,6 +28,8 @@ namespace Delegados_lambda
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Instancio un objeto con la firma del delegado
+            //Con el metodo multiplicar de mi objeto calculadro que se apega a la firma
             clacularDobles delegado = calculador.multiplicar;
             double valor = Convert.ToDouble(textBox1.Text);
             var result = delegado(valor);
@@ -35,16 +38,30 @@ namespace Delegados_lambda
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Instancio un objeto con la firma del delegado
+            //Con el metodo sumar de mi objeto calculadro que se apega a la firma
             clacularDobles delegado = calculador.sumar;
             Double valor = Double.Parse(textBox1.Text);
             var result = delegado(valor);
             label1.Text = result.ToString();
         }
 
+
+        private void operacion(clacularDobles delegado, double numa,double numb, string titulo)
+        {
+            var result = delegado(numa) + numb;
+            label2.Text = titulo + Convert.ToString(result);
+        }
+
+
+
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -59,6 +76,18 @@ namespace Delegados_lambda
             {
                 e.Handled = true;
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            clacularDobles delegado = calculador.multiplicar;
+            double valor = Convert.ToDouble(textBox1.Text);
+            operacion(delegado, valor, 3.14, "Multiplicar");
         }
     }
 }
