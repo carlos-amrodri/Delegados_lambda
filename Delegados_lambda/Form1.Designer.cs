@@ -32,13 +32,16 @@
             this.delegadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.primerEjemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.segundoEjemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linQsimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.delegadosToolStripMenuItem});
+            this.delegadosToolStripMenuItem,
+            this.linQToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(859, 24);
@@ -68,6 +71,21 @@
             this.segundoEjemploToolStripMenuItem.Text = "Segundo ejemplo";
             this.segundoEjemploToolStripMenuItem.Click += new System.EventHandler(this.segundoEjemploToolStripMenuItem_Click);
             // 
+            // linQToolStripMenuItem
+            // 
+            this.linQToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.linQsimpleToolStripMenuItem});
+            this.linQToolStripMenuItem.Name = "linQToolStripMenuItem";
+            this.linQToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.linQToolStripMenuItem.Text = "LinQ";
+            // 
+            // linQsimpleToolStripMenuItem
+            // 
+            this.linQsimpleToolStripMenuItem.Name = "linQsimpleToolStripMenuItem";
+            this.linQsimpleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.linQsimpleToolStripMenuItem.Text = "LinQsimple";
+            this.linQsimpleToolStripMenuItem.Click += new System.EventHandler(this.linQsimpleToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +109,8 @@
         private System.Windows.Forms.ToolStripMenuItem delegadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem primerEjemploToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem segundoEjemploToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linQsimpleToolStripMenuItem;
     }
 }
 

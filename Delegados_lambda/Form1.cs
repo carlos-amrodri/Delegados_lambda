@@ -30,5 +30,12 @@ namespace Delegados_lambda
             lam.MdiParent = this;
             lam.Show();
         }
+
+        private void linQsimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LinQsimpleForm form = new LinQsimpleForm();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
